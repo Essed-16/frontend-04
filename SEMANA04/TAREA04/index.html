@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rojas Morillo Aldair | Dulce Horno</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <a href="index.html"><img src="img/logo.png" alt="Dulce Horno"></a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#recomendaciones">Servicios</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="#formulario">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slider">
+      <div class="slide activa"><img src="img/slide1.jpg" alt="Panetones artesanales"></div>
+      <div class="slide"><img src="img/slide2.jpg" alt="Tortas"></div>
+      <div class="slide"><img src="img/slide3.jpg" alt="Campaña de Navidad"></div>
+      <div class="slide"><img src="img/slide4.jpg" alt="Alfajores y galletas"></div>
+      <div class="paginacion"></div>
+    </section>
+
+    <section id="recomendaciones">
+      <h2>Recomendaciones</h2>
+      <div class="cards">
+        <figure><img src="img/card1.jpg" alt="Panetón"><figcaption>Panetón clásico</figcaption></figure>
+        <figure><img src="img/card2.jpg" alt="Tortas"><figcaption>Torta de chocolate</figcaption></figure>
+        <figure><img src="img/card3.jpg" alt="Alfajores"><figcaption>Alfajores</figcaption></figure>
+        <figure><img src="img/card4.jpg" alt="Galletas"><figcaption>Galletas</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="noticias">
+      <h2>Noticias</h2>
+      <article class="fila">
+        <img src="img/news1.jpg" alt="Nuevo sabor">
+        <div><h3>Nuevo sabor de panetón</h3><p>Presentamos el panetón de chocolate con naranja, horneado en lotes pequeños para esta campaña. Ya puedes reservarlo en tienda y por teléfono.</p></div>
+      </article>
+      <article class="fila invertida">
+        <img src="img/news2.jpg" alt="Horno nuevo">
+        <div><h3>Ampliamos la producción</h3><p>Sumamos un horno nuevo y más personal en el almacén para atender los pedidos grandes sin retrasos y mantener la frescura de cada pieza.</p></div>
+      </article>
+      <article class="fila">
+        <img src="img/news3.jpg" alt="Pedidos online">
+        <div><h3>Pedidos por internet</h3><p>Desde esta semana puedes dejarnos tus datos en el formulario y te contactamos para confirmar cantidad, sabor y fecha de entrega.</p></div>
+      </article>
+    </section>
+
+    <section id="formulario" >
+      <h2>Formulario</h2>
+      <form id="formContacto">
+        <input type="text"  id="nombre"  placeholder="Ingrese Nombre" required>
+        <input type="email" id="correo"  placeholder="Ingrese Correo" required>
+        <input type="number"   id="celular" placeholder="Ingrese Celular" required>
+        <button type="submit">Enviar</button>
+        <p id="mensaje" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="redes">
+      <a href="https://www.facebook.com/" target="_blank">F</a>
+      <a href="https://www.linkedin.com/" target="_blank" >IN</a>
+      <a href="https://x.com/" target="_blank" >X</a>
+    </div>
+    <p>Edson Aldair Rojas Morillo</p>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>

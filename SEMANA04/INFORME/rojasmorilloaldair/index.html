@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Horno | Rojas Morillo</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<main class="contenedor">
+  <header class="cabecera">
+    <img src="img/logo.png" alt="Logo de Dulce Horno" width="72" height="72">
+    <h1>Dulce Horno</h1>
+  </header>
+  <nav aria-label="Menú principal">
+    <ul class="menu">
+      <li><a class="activo" href="#inicio">Inicio</a></li>
+      <li><a href="#producto">Panetones</a></li>
+      <li><a href="#registro">Reservas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <section class="slider" id="inicio" aria-label="Novedades">
+    <div class="slide activa"><img src="img/slide1.jpg" alt="Panetones artesanales"></div>
+    <div class="slide"><img src="img/slide2.jpg" alt="Tortas para tu celebración"></div>
+    <div class="slide"><img src="img/slide3.jpg" alt="Campaña de Navidad"></div>
+    <div class="slide"><img src="img/slide4.jpg" alt="Alfajores y galletas"></div>
+    <div class="paginacion" role="tablist" aria-label="Paginación del slider"></div>
+  </section>
+  <section class="contenido" id="producto">
+    <div class="col-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JQXSoxp6WwI?si=Pii9RNxa1QdnM05x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="col-texto">
+      <h2>Panetón artesanal de Dulce Horno</h2>
+      <p>Horneamos nuestros panetones en lotes pequeños, con masa de fermentación lenta, fruta confitada y mantequilla de primera. Cada pieza se empaca el mismo día para llegar fresca a tu mesa.</p>
+      <p>Atendemos pedidos para familias y empresas durante toda la campaña navideña. Puedes elegir entre el sabor clásico, chocolate o con frutos secos, y reservar la cantidad que necesites con anticipación.</p>
+    </div>
+  </section>
+  <section class="inferior" id="registro">
+    <aside class="publicidad" aria-label="Publicidad">
+      <span>PUBLICIDAD</span>
+      <img src="img/pub.jpeg" alt="Oferta: 2 panetones">
+    </aside>
+    <form class="registro" id="formRegistro" novalidate>
+      <h2>Regístrate</h2>
+      <input type="text"  id="nombre"  placeholder="Nombre completo" required>
+      <input type="email" id="correo"  placeholder="Correo electrónico" required>
+      <input type="tel"   id="celular" placeholder="Celular (9 dígitos)" pattern="[0-9]{9}" required>
+      <button type="submit">ENVIAR</button>
+      <p id="mensaje" role="status"></p>
+    </form>
+  </section>
+
+  <footer class="pie" id="contacto">
+    <div class="datos">
+      <p>&copy; 2026 Edson Aldair Rojas Morillo</p>
+      <p>Correo: <a href="mailto:1738588@senati.pe">1738588@senati.pe</a></p>
+      <p>Página web: <a href="https://Essed-16.github.io/frontend-04/INFORME/rojasmorilloaldair" target="_blank" >https://Essed-16.github.io/frontend-04/INFORME/rojasmorilloaldair</a></p>  
+    </div>
+    <div class="redes">
+      <a href="https://www.youtube.com/" target="_blank"i>YT</a>
+      <a href="https://www.facebook.com/" target="_blank">F</a>
+      <a href="https://x.com/" target="_blank">X</a>
+    </div>
+  </footer>
+
+</main>
+<script src="js/slider.js"></script>
+<script src="js/registro.js"></script>
+</body>
+</html>
